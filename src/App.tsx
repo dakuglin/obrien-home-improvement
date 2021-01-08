@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
+import { NavigationBar } from "./components/NavigationBar";
 
 
-export const App: React.FC = () => {
+export const App: FC = () => {
   return (
     <>
-    <div>Hello World!</div>
+    <NavigationBar />
     </>
   );
 };
