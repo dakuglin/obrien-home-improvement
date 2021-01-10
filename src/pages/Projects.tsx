@@ -1,6 +1,6 @@
-import React from "react";
+import React, { FC } from "react";
 
-export const Projects = () => {
+export const Projects: FC = () => {
   return (
     <>
     <p>Projects</p>

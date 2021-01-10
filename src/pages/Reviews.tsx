@@ -1,6 +1,6 @@
-import React from "react";
+import React, { FC } from "react";
 
-export const Reviews = () => {
+export const Reviews: FC = () => {
   return (
     <>
     <p>Reviews</p>
