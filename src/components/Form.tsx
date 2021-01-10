@@ -10,9 +10,6 @@ export const Form: FC = () => {
     <form
       // onSubmit={((event: React.FormEvent<HTMLFormElement>) => setStatus(event)}
     >
-
-
-
     </form>
     </>
   );
