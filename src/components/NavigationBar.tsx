@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Navigation } from "../styles/Navigation";
 
-export const NavigationBar = () => {
+export const NavigationBar: FC = () => {
   return (
     <Navigation>
     <Navbar >
