@@ -16,7 +16,7 @@ export const App: FC = () => {
     <Router> 
       <div>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="obrien-home-improvement/" component={Home} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/reviews" component={Reviews} />
           <Route exact path="/contact" component={Contact} />
@@ -26,3 +26,4 @@ export const App: FC = () => {
     </>
   );
 };
+
