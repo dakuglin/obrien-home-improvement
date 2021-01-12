@@ -6,6 +6,6 @@ export const Container = styled.div`
   
 `;
 
-export const MyForm = styled.form`
+export const FormWrapper = styled.form`
   width: 90%
 `;

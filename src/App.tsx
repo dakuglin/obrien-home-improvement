@@ -17,9 +17,9 @@ export const App: FC = () => {
       <div>
         <Switch>
           <Route exact path="/obrien-home-improvement" component={Home} />
-          <Route exact path="/obrien-home-improvement/projects" component={Projects} />
-          <Route exact path="/obrien-home-improvement/reviews" component={Reviews} />
-          <Route exact path="/obrien-home-improvement/contact" component={Contact} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/reviews" component={Reviews} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
       </div>
     </Router>
