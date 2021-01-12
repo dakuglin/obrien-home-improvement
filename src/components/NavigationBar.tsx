@@ -11,9 +11,9 @@ export const NavigationBar: FC = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="/obrien-home-improvement">Home</Nav.Link>
-          <Nav.Link href="/obrien-home-improvement/projects">Projects</Nav.Link>
-          <Nav.Link href="/obrien-home-improvement/reviews">Reviews</Nav.Link>
-          <Nav.Link href="/obrien-home-improvement/contact">Contact</Nav.Link>
+          <Nav.Link href="/projects">Projects</Nav.Link>
+          <Nav.Link href="/reviews">Reviews</Nav.Link>
+          <Nav.Link href="/contact">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
