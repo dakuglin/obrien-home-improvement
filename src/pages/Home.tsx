@@ -1,9 +1,14 @@
 import React, { FC } from "react";
+import { Wrapper } from "../styles/Home";
+
 
 export const Home: FC = () => {
   return (
     <>
-    <p>Home / About</p>
+    <Wrapper left></Wrapper>
+
+  
+  
     </>
   );
 };
