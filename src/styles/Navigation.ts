@@ -1,28 +1,43 @@
 import styled from "styled-components";
 
 export const Container = styled.nav`
+
+  //overall container styling 
   background-color: rgb(255, 254, 252);
-  /* padding: 50px 300px 50px 300px; */
-  /* position: sticky; */
-  /* padding: 50px 100px; */
+  padding: 30px 30px;
   width: 100%;
 
-  a.navbar.brand {
-    margin: 0 16px;
-  }
-  img.company-logo {
-    width: 30px;
-    height: 30px;
+  //styling of brand tag surrounding logo
+  a.navbar-brand {
+    padding: 0;
+    margin: 0;
   }
 
-  .main-nav_items {
-    margin: 0 50px;
+  //styling logo 
+  img.company-logo {
+    width: 300px;
+    height: 90px;
   }
-  
+
+  //styles all links in nav 
+  .navbar-nav {
+    margin: 0 35px;
+  }
+   
+  //styles each individaul nav-link
   a.nav-link {
     margin: 0 16px; 
+    font-size: 33px;
+    color:green;
   }
-  /* a.nav-link:hover {
-    color: hotpink;
-  } */
+
+  span {
+    color: black;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  span:hover {
+    color: #009a49;
+  }
+
 `;
