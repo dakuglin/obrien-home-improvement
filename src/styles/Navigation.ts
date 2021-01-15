@@ -4,6 +4,7 @@ export const Container = styled.nav`
 
   //overall container styling 
   background-color: rgb(255, 254, 252);
+  background-color: lightgray;
   padding: 30px 30px;
   width: 100%;
 
@@ -31,13 +32,16 @@ export const Container = styled.nav`
     color:green;
   }
 
+  //styles for nav-link
   span {
     color: black;
     font-weight: bold;
     font-family: 'Roboto Condensed', sans-serif;
   }
+
+  //hover effect for nav-links
   span:hover {
     color: #009a49;
+    transition: 0.35s ease-out;
   }
-
 `;
