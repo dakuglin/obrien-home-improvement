@@ -4,7 +4,7 @@ export const Container = styled.nav`
 
   //overall container styling 
   background-color: rgb(255, 254, 252);
-  background-color: lightgray;
+  /* background-color: lightgray; */
   padding: 30px 30px;
   width: 100%;
 
