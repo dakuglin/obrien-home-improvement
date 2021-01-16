@@ -1,10 +1,9 @@
-import React, { FC, PropsWithRef, useState } from "react";
+import React, { FC } from "react";
 import { Hero } from "./Hero";
 import { Carousel } from "react-bootstrap";
 
 
 export const MainCarousel: FC = () => {
-
 
   const url_1 = 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
 

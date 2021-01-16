@@ -1,15 +1,28 @@
 import React, { FC } from "react";
-import { Container, Row, Col, Carousel } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { Title } from "../styles/Home";
 import { MainCarousel } from "../components/MainCarousel";
+// import projects from "../../projects.json";
+// import { MyCarousel } from "../components/MainCarousle2";
+
 
 
 export const Home: FC = () => {
+
   return (
     <>
     <Container fluid>
       <Row>
         <Col sm={8}>
+          {/* <MyCarousel
+            {projects.map(project => (
+              id={project.id}
+              key={project.id}
+            ))} */}
+          
+{/*           
+          /> */}
+
           <MainCarousel />
         </Col>
         <Col>
