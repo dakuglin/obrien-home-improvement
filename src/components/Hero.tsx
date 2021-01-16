@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import { HeroContainer } from "../styles/Hero";
 
 
 interface Props {
@@ -9,9 +10,9 @@ interface Props {
 export const Hero: FC<Props> = ({ img_url, img_alt }) => {
   return (
     <>
-    <div className="hero-container ">
+    <HeroContainer>
       <img className="hero-img img-fluid" src={img_url} alt={img_alt}/>
-    </div>
+    </HeroContainer>
     </>
   );
 };

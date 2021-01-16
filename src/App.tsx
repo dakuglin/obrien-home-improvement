@@ -1,11 +1,14 @@
 import React, { FC } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { GlobalStyle } from "./styles/Global";
 import { NavigationBar } from "./components/NavigationBar";
 import { Home } from "./pages/Home";
 import { Projects } from "./pages/Projects";
 import { Reviews } from "./pages/Reviews";
 import { Contact } from "./pages/Contact";
-import { GlobalStyle } from "./styles/Global";
+import { Footer } from "./components/Footer";
+
+
 
 
 export const App: FC = () => {
@@ -23,6 +26,7 @@ export const App: FC = () => {
         </Switch>
       </div>
     </Router>
+    <Footer />
     </>
   );
 };

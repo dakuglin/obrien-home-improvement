@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "img_url": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    "img_alt": "Bathroom Remodel",
+    "title": "First slide lable",
+    "description": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+  },
+  {
+    "id": 2,
+    "img_url": "https://images.unsplash.com/photo-1484154218962-a197022b5858?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1953&q=80",
+    "img_alt": "Kitchen Remodel",
+    "title": "Second slide lable",
+    "description": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+  },
+  {
+    "id": 3,
+    "img_url": "https://images.unsplash.com/photo-1556909190-eccf4a8bf97a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    "img_alt": "Laundry Room Remodel",
+    "title": "Third slide lable",
+    "description": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+  }
+]
