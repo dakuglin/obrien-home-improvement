@@ -8,7 +8,7 @@ import {
   Field,
 } from 'formik';
 import axios from 'axios';
-import { FORM_URL } from "../config";
+// import { FORM_URL } from "../config";
  
 interface FormValues {
   name: string;
@@ -52,7 +52,7 @@ export const ContactForm: FC<{}> = () => {
           console.log({ values, actions });
           axios({
             method: "POST",
-            url: FORM_URL,
+            url: "",
             data: values,
           })
          .then(response => {

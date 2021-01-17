@@ -8,7 +8,7 @@ export const NavigationBar: FC = () => {
     <>
     <Container>
       <Navbar expand="lg"> {/* responsive collapsing */}
-        <Navbar.Brand href="/obrien-home-improvement"> {/* company logo and brand */}
+        <Navbar.Brand href="/"> {/* company logo and brand */}
           <img 
             className="company-logo"
             src={LOGO}
@@ -18,10 +18,10 @@ export const NavigationBar: FC = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" /> {/* collapse plugin (hamburger) */}
         <Navbar.Collapse id="basic-navbar-nav"> {/* grouping and hiding navbar content @ breakpoint */}
           <Nav className="mr-auto navbar-nav">
-            <Nav.Link href="/obrien-home-improvement"><span>Home</span></Nav.Link>
-            <Nav.Link href="/obrien-home-improvement/projects"><span>Projects</span></Nav.Link>
-            <Nav.Link href="/obrien-home-improvement/reviews"><span>Reviews</span></Nav.Link>
-            <Nav.Link href="/obrien-home-improvement/contact"><span>Contact</span></Nav.Link>
+            <Nav.Link href="/"><span>Home</span></Nav.Link>
+            <Nav.Link href="/projects"><span>Projects</span></Nav.Link>
+            <Nav.Link href="/reviews"><span>Reviews</span></Nav.Link>
+            <Nav.Link href="/contact"><span>Contact</span></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
