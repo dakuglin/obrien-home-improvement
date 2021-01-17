@@ -13,4 +13,22 @@ export const FooterWrapper = styled.div `
   display: flex;
   max-width: 100%;
   margin: 0 auto;
+
+   //styling logo 
+   img.company-logo {
+    width: 200px;
+    height: 70px;
+    margin-left: 200px;
+  }
+
+  .services{
+    margin-top: 105px;
+    margin-left: 80px;
+  }
+`;
+
+export const Contact = styled.div`
+  margin-left: 200px;
+  padding-top: 30px;
+
 `;
