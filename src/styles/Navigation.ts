@@ -40,7 +40,7 @@ export const Container = styled.nav`
 
   //hover effect for nav-links
   span:hover {
-    color: #009a49;
+    color:  #39b54a;
     transition: 0.35s ease-out;
   }
 `;

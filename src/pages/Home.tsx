@@ -1,11 +1,16 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Title } from "../styles/Home";
-import { MainCarousel } from "../components/MainCarousel";
-// import projects from "../../projects.json";
-// import { MyCarousel } from "../components/MainCarousle2";
+// import { MainCarousel } from "../components/MainCarousel";
+// import projects from "../projects.json";
+import { MyCarousel } from "../components/MainCarousle2";
 
-
+// interface Props {
+//   id: number;
+//   img_alt: string;
+//   title: string;
+//   description: string;
+// }
 
 export const Home: FC = () => {
 
@@ -14,16 +19,15 @@ export const Home: FC = () => {
     <Container fluid>
       <Row>
         <Col sm={8}>
-          {/* <MyCarousel
-            {projects.map(project => (
+          {/* {projects.map(project => (
+            <MyCarousel
               id={project.id}
-              key={project.id}
-            ))} */}
-          
-{/*           
-          /> */}
-
-          <MainCarousel />
+              img_url={project.img_url}
+              img_alt={project.img_alt}
+              title={project.title}
+              description={project.description}
+            />
+          ))} */}
         </Col>
         <Col>
           <Title>
