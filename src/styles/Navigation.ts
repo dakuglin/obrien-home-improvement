@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.nav`
 
   //overall container styling 
-  background-color: rgb(255, 254, 252);
+  background-color: #FFFEFC;
   padding: 30px 30px;
   width: 100%;
 
@@ -35,7 +35,7 @@ export const Container = styled.nav`
   span {
     color: black;
     font-weight: bold;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
 
   //hover effect for nav-links

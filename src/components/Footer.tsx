@@ -4,8 +4,13 @@ import LOGO from "../images/logo.png";
 import { 
   FooterContainer,
   FooterWrapper,
-  Contact
+  FooterLink,
+  Title,
 } from "../styles/Footer";
+import { 
+  SiInstagram,
+  SiFacebook,
+} from "react-icons/si"
 
 
 export const Footer: FC = () => {
@@ -13,26 +18,38 @@ export const Footer: FC = () => {
     <>
     <FooterContainer>
       <FooterWrapper>
-        <Row>
-          <Col>
-            <Navbar.Brand href="/obrien-home-improvement"> {/* company logo and brand */}
-              <img 
-                className="company-logo"
-                src={LOGO}
-                alt="O'Brien Home Improvement"
-              />
-            </Navbar.Brand>
-            <Contact>
-              <h4>Contact</h4>
-              <p> 303.305.8433</p>
-              <p>homeimprovements.obrien@gmail.com</p>
-              <p>address?</p>
-            </Contact>
-          </Col>
-          <Col>
-            <h4 className="services">Services</h4>
-          </Col>
-        </Row>
+        <Container fluid>
+          <Row>
+            <Col>
+              <Navbar.Brand href="/obrien-home-improvement"> {/* company logo and brand */}
+                <img 
+                  className="company-logo"
+                  src={LOGO}
+                  alt="O'Brien Home Improvement"
+                />
+              </Navbar.Brand>
+            </Col>
+          </Row>
+          <Row className="footer-row">
+            <Col>
+              <FooterLink href={process.env.PUBLIC_URL + "/contact"}>
+                <Title>Contact</Title>
+              </FooterLink>
+                <p>
+                  Alex Stobbelaar - Owner
+                  <br />
+                  homeimprovements.obrien@gmail.com
+                  <br />
+                  303-305-8433
+                </p>
+            </Col>
+            <Col>
+              <Title>Connect</Title>
+              <SiInstagram className="social-media-icon"/>
+              <SiFacebook className="social-media-icon"/>
+            </Col>
+          </Row>
+        </Container>
       </FooterWrapper>
     </FooterContainer>
     </>
