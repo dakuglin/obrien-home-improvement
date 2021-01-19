@@ -1,9 +1,9 @@
 import React, { FC, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Title } from "../styles/Home";
-// import { MainCarousel } from "../components/MainCarousel";
+import { MainCarousel } from "../components/MainCarousel";
 // import projects from "../projects.json";
-import { MyCarousel } from "../components/MainCarousle2";
+// import { MyCarousel } from "../components/MainCarousle2";
 
 // interface Props {
 //   id: number;
@@ -28,6 +28,7 @@ export const Home: FC = () => {
               description={project.description}
             />
           ))} */}
+          <MainCarousel />
         </Col>
         <Col>
           <Title>

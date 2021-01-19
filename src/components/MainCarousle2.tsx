@@ -13,19 +13,17 @@ interface Props {
 }
 
 
-export const MyCarousel: FC = (props) => {
+export const MyCarousel: FC = () => {
 
   // const [index, setIndex] = useState(0);
 
   // const handleSelect = (selectedIndex: number) =>  {
   //   setIndex(selectedIndex);
-  };
-
-  console.log(projects);
+  // };
 
   return (
     <>
-    {projects.length ? (
+    {/* {projects.length ? (
       <Carousel >
       {projects.map(project => (
         <Carousel.Item>
@@ -40,7 +38,7 @@ export const MyCarousel: FC = (props) => {
       </Carousel> 
     ) : (
       <h3>loading...</h3>
-    )}
+    )} */}
     </>
   );
 };
