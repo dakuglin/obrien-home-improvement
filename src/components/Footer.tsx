@@ -4,8 +4,9 @@ import LOGO from "../images/logo.png";
 import { 
   FooterContainer,
   FooterWrapper,
-  FooterLink,
-  Title,
+  Img,
+  FooterTitle,
+  FooterContent,
 } from "../styles/Footer";
 import { 
   SiInstagram,
@@ -19,34 +20,41 @@ export const Footer: FC = () => {
     <FooterContainer>
       <FooterWrapper>
         <Container fluid>
-          <Row>
+          {/* first row logo */}
+          <Row className="test">
             <Col>
-              <Navbar.Brand href="/obrien-home-improvement"> {/* company logo and brand */}
-                <img 
-                  className="company-logo"
+              <Navbar.Brand href="/obrien-home-improvement"> 
+                <Img
                   src={LOGO}
                   alt="O'Brien Home Improvement"
                 />
               </Navbar.Brand>
             </Col>
           </Row>
-          <Row className="footer-row">
+          {/* second row footer FooterTitles w/ FooterContent*/}
+          <Row>
             <Col>
-              <FooterLink href={process.env.PUBLIC_URL + "/contact"}>
-                <Title>Contact</Title>
-              </FooterLink>
-                <p>
-                  Alex Stobbelaar - Owner
-                  <br />
-                  homeimprovements.obrien@gmail.com
-                  <br />
-                  303-305-8433
-                </p>
+              <FooterTitle>Contact</FooterTitle>
+              <FooterContent>
+                <p>Alex Stobbelaar - Owner</p>
+                <p>homeimprovements.obrien@gmail.com</p>
+                <p>303-305-8433</p>
+              </FooterContent>
             </Col>
             <Col>
-              <Title>Connect</Title>
-              <SiInstagram className="social-media-icon"/>
-              <SiFacebook className="social-media-icon"/>
+              <FooterTitle>About</FooterTitle>
+              <FooterContent>
+                <p>Free Estimates</p>
+                <p>Licensed & Insured</p>
+                <p>Upfront Pricing</p>
+              </FooterContent>
+            </Col>
+            <Col>
+              <FooterTitle>Connect</FooterTitle>
+              <FooterContent>
+                <SiFacebook className="social-media-icon"/>
+                <SiInstagram className="social-media-icon"/>
+              </FooterContent>
             </Col>
           </Row>
         </Container>
