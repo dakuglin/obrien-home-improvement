@@ -1,11 +1,8 @@
-import { createGlobalStyle, css } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   body {
-    /* background-color: whitesmoke;  */
-   
-    
+    background-color: whitesmoke; 
+    color: #204652;
   }
-
-
 `;

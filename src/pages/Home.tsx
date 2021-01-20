@@ -1,7 +1,8 @@
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { Title } from "../styles/Home";
+import { About } from "../styles/Home";
 import { MainCarousel } from "../components/MainCarousel";
+import { FaHammer } from "react-icons/fa"
 // import projects from "../projects.json";
 // import { MyCarousel } from "../components/MainCarousle2";
 
@@ -31,23 +32,33 @@ export const Home: FC = () => {
           <MainCarousel />
         </Col>
         <Col>
-          <Title>
+          <About>
             <p className="main-title">Welcome Home</p>
             <br />
-            <p className="main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque vitae tempus quam pellentesque nec nam. Fermentum odio eu feugiat pretium. A scelerisque purus semper eget. Purus sit amet luctus venenatis lectus magna fringilla. Ut venenatis tellus in metus vulputate eu scelerisque. Turpis massa tincidunt dui ut ornare. Sit amet purus gravida quis blandit turpis cursus in. Molestie at elementum eu facilisis sed odio morbi. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Eget est lorem ipsum dolor sit. Nulla facilisi morbi tempus iaculis. Eu consequat ac felis donec.</p>
+            <p className="main-text"> 
+              Let O'Brien Home Improvement help you with your next home renovation. This Colorado based company has been serving the greater Denver Area for over 5 years. Weather your project is big or small, trust O'Brien Home Improvement to transform your space into a home you always dreamed of.
+            </p>
+            <p className="main-text"> Fully licensed and insured. Rest assured we will treat your home with respect. Call today for a free estimate.</p>
             <br />
-            <p className="main-services">Services </p>
-              <ul className="main-services-list">
-                <li>Tile</li>
-                <li>Fences</li>
-                <li>Painting</li>
-                <li>Windows & Doors</li>
-                <li>Bathrooms</li>
-                <li>Kitchens</li>
-              </ul>
-          </Title>
-        
-        
+            <p className="main-services">Services</p>
+            <Row className="main-services-rows">
+              <Col sm={2}/>
+              <Col sm={3}>
+                <div className="main-services-list">
+                  <li> <FaHammer className="main-services-bullet"/>Tile</li>
+                  <li> <FaHammer className="main-services-bullet"/>Fences</li>
+                  <li> <FaHammer className="main-services-bullet"/>Painting</li>
+                </div>
+              </Col>
+              <Col>
+                <div className="main-services-list">
+                  <li> <FaHammer className="main-services-bullet"/>Kitchens</li>
+                  <li> <FaHammer className="main-services-bullet"/>Bathrooms</li>
+                  <li> <FaHammer className="main-services-bullet"/>Windows & Doors</li>
+                </div>
+              </Col>
+            </Row>
+          </About>
         </Col>
       </Row>
       <Row>
