@@ -33,7 +33,7 @@ export const Container = styled.nav`
 
   //styles for nav-link
   span {
-    color: black;
+    color: #204652;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
   }

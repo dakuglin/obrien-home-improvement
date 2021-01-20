@@ -15,9 +15,14 @@ export const MainCarousel: FC = () => {
     <>
     <Carousel>
       <Carousel.Item >
-        <Hero 
+        {/* <Hero 
           img_url={ url_1 } 
           img_alt='bathroom'
+        /> */}
+        <img
+          className="d-block w-100"
+          src={url_1}
+          alt="Bathroom"
         />
         <Carousel.Caption>
           <h3>First slide label</h3>
@@ -25,9 +30,14 @@ export const MainCarousel: FC = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item >
-        <Hero
+        {/* <Hero
           img_url={ url_2 } 
           img_alt='kitchen'
+        /> */}
+         <img
+          className="d-block w-100"
+          src={url_2}
+          alt="Kitchen"
         />
           <Carousel.Caption>
             <h3>Second slide label</h3>

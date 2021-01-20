@@ -36,7 +36,7 @@ export const Footer: FC = () => {
             <Col>
               <FooterTitle>Contact</FooterTitle>
               <FooterContent>
-                <p>Alex Stobbelaar - Owner</p>
+                <p>Alex O'Brien Stobbelaar - Owner</p>
                 <p>homeimprovements.obrien@gmail.com</p>
                 <p>303-305-8433</p>
               </FooterContent>
