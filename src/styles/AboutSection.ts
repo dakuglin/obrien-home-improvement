@@ -7,7 +7,7 @@ export const AboutTitle = styled.div`
   font-size: 3em;
   font-weight: 500;
   font-style: oblique;
-  border-bottom: 2px dashed;
+  border-bottom: 3px dashed;
 `;
 
 export const AboutMain = styled.div`
