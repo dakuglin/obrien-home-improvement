@@ -3,11 +3,12 @@ import styled from "styled-components";
 export const FormContainer = styled.div`
   background: whitesmoke;
   margin: 60px;
-  border: 2px solid  #c2cfcf;
+  /* border: 2px solid  #c2cfcf; */
+  background-color: #204652;
 `;
 
 export const FormWrapper = styled.div`
-  padding: 50px 20px;
+  padding: 40px 10px;
   max-width: 65%;
   margin: 0 auto;
 
@@ -33,6 +34,7 @@ export const Title = styled.h1`
   font-size: 2.2em;
   padding-bottom: 30px;
   text-align: center;
+  color: #ffffff;
 
   .form-title-info {
     display: inline;
@@ -49,8 +51,9 @@ export const Title = styled.h1`
 `;
 
 export const Button = styled.button`
+  background-color:  #39b54a;
   font-family: 'Nunito', sans-serif;
-  color:  #39b54a;
+  color:  #ffffff;
   font-weight: bold;
   padding: 8px;
   border-radius: 4px;
@@ -58,7 +61,7 @@ export const Button = styled.button`
   box-shadow: none;
   border: none;
   width: 20%;
-  border:  #39b54a 1px solid;
+  border:  #ffffff 1px solid;
   white-space: none;
   display: block;
   margin: 0 auto;

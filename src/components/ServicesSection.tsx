@@ -9,7 +9,7 @@ export const ServicesSection: FC = () => {
   return (
     <>
     <ServicesContainer>
-      <ServicesTitle>What We Offer</ServicesTitle>
+      <ServicesTitle>What We Offer </ServicesTitle>
       <Services>
         <FaHammer className="form-title-hammer"/>
         {services.map((value: string, index: number) => {
@@ -22,6 +22,7 @@ export const ServicesSection: FC = () => {
         })}
       </Services>
     </ServicesContainer>
+    <p></p>
     </>
   );
 };

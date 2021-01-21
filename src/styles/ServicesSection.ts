@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
-  margin: 50px;
+  margin: 60px;
 `;
 
 export const ServicesTitle = styled.div`
-  padding-top: 2%;
+  padding-top: 1%;
   padding-bottom: 2%;
   text-align: center;
   font-size: 2.5em;
@@ -14,7 +14,7 @@ export const ServicesTitle = styled.div`
 `;
 
 export const Services = styled.div`
-  padding-top: 2%; 
+  padding-top: 1%; 
   text-align: center;
 
   .form-title-info {
