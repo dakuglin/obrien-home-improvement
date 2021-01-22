@@ -43,7 +43,6 @@ export const FooterTitle = styled.div`
 export const FooterContent = styled.div`
   font-family: 'Nunito', sans-serif;
   margin-left: 33%;
-  color: #204652;
   font-size: 20px;
 
   .social-media-icon {
@@ -52,23 +51,24 @@ export const FooterContent = styled.div`
   }
 `;
 
+export const FooterCredit = styled.div`
+  color: #204652;
+  text-align: center;
+  font-style: oblique;
+  border-top: 3px dashed;
+  padding-top: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
 
+  .credit-link {
+    color: #c38d9e;
+    font-style: italic;
+    text-decoration: none;
 
+  }
 
-
-  /* .social-media-icon {
-    font-size: 30px;
-    margin: 15px; 
-  } */
-
-
-  
-// export const FooterLink = styled.a`
-//   color: #204652;
-
-//   :hover {
-//     color: black;
-//     transition: 0.35s ease-out;
-//     text-decoration: none;
-//   }
-// `;
+  :hover {
+    text-decoration: none;
+  }
+`;

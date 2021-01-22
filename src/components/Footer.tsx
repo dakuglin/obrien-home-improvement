@@ -7,6 +7,7 @@ import {
   Img,
   FooterTitle,
   FooterContent,
+  FooterCredit,
 } from "../styles/Footer";
 import { 
   SiInstagram,
@@ -53,12 +54,23 @@ export const Footer: FC = () => {
               <FooterTitle>Connect</FooterTitle>
               <FooterContent>
                 <SiFacebook className="social-media-icon"/>
-                <SiInstagram className="social-media-icon"/>
+                <a href="https://www.instagram.com/obrienhomeimprovement/?hl=en" target="_#">
+                  <SiInstagram className="social-media-icon"/>
+                </a>
               </FooterContent>
             </Col>
           </Row>
         </Container>
       </FooterWrapper>
+      <FooterCredit>
+        <Row>
+          <Col sm={12}>
+            <p> 
+              website designed by <a href="https://dana-weijers-portfolio.herokuapp.com/" target="_#"><span className="credit-link">dana weijers</span></a> 
+            </p>
+          </Col>
+        </Row>
+      </FooterCredit>
     </FooterContainer>
     </>
   );

@@ -17,7 +17,6 @@ export const AboutSection: FC = () => {
     </AboutMain>
     <AboutMainContact>
       303-305-8433
-      <br />
       homeimprovements.obrien@gmail.com
     </AboutMainContact>
  
