@@ -34,26 +34,28 @@ export const Footer: FC = () => {
           </Row>
           {/* second row footer FooterTitles w/ FooterContent*/}
           <Row>
-            <Col>
+            <Col lg={4}>
+            <FooterContent>
               <FooterTitle>Contact</FooterTitle>
-              <FooterContent>
-                <p>Alex O'Brien Stobbelaar - Owner</p>
-                <p>homeimprovements.obrien@gmail.com</p>
-                <p>303-305-8433</p>
+              <p>Alex O'Brien Stobbelaar - Owner</p>
+              <p>homeimprovements.obrien@gmail.com</p>
+              <p>303-305-8433</p>
               </FooterContent>
             </Col>
-            <Col>
+            <Col lg={4}>
+            <FooterContent>
               <FooterTitle>About</FooterTitle>
-              <FooterContent>
-                <p>Free Estimates</p>
-                <p>Licensed & Insured</p>
-                <p>Upfront Pricing</p>
+              <p>Free Estimates</p>
+              <p>Upfront Pricing</p>
+              <p>Licensed & Insured</p>
               </FooterContent>
             </Col>
-            <Col>
+            <Col lg={4}>
+            <FooterContent>
               <FooterTitle>Connect</FooterTitle>
-              <FooterContent>
-                <SiFacebook className="social-media-icon"/>
+                <a href="/#" target="_#" >
+                  <SiFacebook className="social-media-icon"/>
+                </a>
                 <a href="https://www.instagram.com/obrienhomeimprovement/?hl=en" target="_#">
                   <SiInstagram className="social-media-icon"/>
                 </a>

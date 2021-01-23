@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const FormContainer = styled.div`
   background: whitesmoke;
   margin: 60px;
-  /* border: 2px solid  #c2cfcf; */
   background-color: #204652;
 `;
 
@@ -22,10 +21,11 @@ export const FormWrapper = styled.div`
 
   input.form-control.message {
     height: 100px;
+    vertical-align: text-top;
   }
 
   ::placeholder {
-    color: green;
+    color: pink;
   }
 `;
 
