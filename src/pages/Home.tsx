@@ -4,6 +4,7 @@ import { MainCarousel } from "../components/MainCarousel";
 import { AboutSection } from "../components/AboutSection";
 import { ServicesSection } from "../components/ServicesSection";
 import { HomePageWrapper } from "../styles/Home";
+import { Team } from "../components/Team";
 
 
 export const Home: FC = () => {
@@ -22,8 +23,13 @@ export const Home: FC = () => {
           </Col>
         </Row>
         <Row>
-          <Col md={12}>
+          <Col lg={12}>
             <ServicesSection />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Team />
           </Col>
         </Row>
       </Container>

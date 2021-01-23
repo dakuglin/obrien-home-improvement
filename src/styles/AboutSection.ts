@@ -22,5 +22,5 @@ export const AboutMainContact = styled.div`
   color:  #39b54a;
   font-size: 25px;
   font-weight: 700;
-  padding-top: 50px;
+  padding-top: 30px;
 `;
