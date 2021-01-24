@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import {BrowserRouter as Router, HashRouter, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import { GlobalStyle } from "./styles/Global";
 import { NavigationBar } from "./components/NavigationBar";
 import { Home } from "./pages/Home";
@@ -14,7 +14,7 @@ export const App: FC = () => {
     <>
     <GlobalStyle />
     <NavigationBar />
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div>
         <Switch>
           <Route exact path="/" component={Home} />

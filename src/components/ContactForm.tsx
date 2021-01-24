@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
 import { Title, FormContainer, FormWrapper, Button } from "../styles/ContactForm";
-import { FORM_URL } from "../config";
+import { FORM_URL } from "../config/config";
 import {
   Formik,
   Form,
@@ -26,6 +26,7 @@ interface Errors {
 export const ContactForm: FC<{}> = () => {
 
   const [status, setStatus] = useState<Errors>();
+  console.log(status);
 
   const handleStatusResponse = ( ok: boolean, message: string) => {
     setStatus({ ok, message });

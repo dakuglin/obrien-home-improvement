@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import LOGO from "../images/logo2.png";
 import { 
   AboutTitle, 
   AboutMain, 
