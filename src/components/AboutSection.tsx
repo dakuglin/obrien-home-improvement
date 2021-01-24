@@ -19,8 +19,19 @@ export const AboutSection: FC = () => {
       Weather your project is big or small, trust O'Brien Home Improvement to transform your space into the home you always dreamed of. Fully licensed and insured, you can rest assured your home will be treated with respect. 
     </AboutMain>
     <AboutMainContact>
-      303-305-8433
-      homeimprovements.obrien@gmail.com
+      <div>
+        <p>
+          <a href="tel:3033058433" className="about-section-contact">
+          303-305-8433
+          </a>
+        </p>
+        <p>
+          <a href="mailto:homeimprovements.obrien@gmail.com" className="about-section-contact">
+          homeimprovements.obrien@gmail.com
+          </a>
+        </p>
+      </div>
+                     
     </AboutMainContact>
     </>
   );
