@@ -19,8 +19,18 @@ export const AboutMain = styled.div`
 
 export const AboutMainContact = styled.div`
   text-align: center;
-  color:  #39b54a;
   font-size: 25px;
   font-weight: 700;
-  padding-top: 30px;
+  padding-top: 20px;
+
+  a.about-section-contact {
+    color:  #39b54a;
+    font-style: oblique;  
+  }
+
+  a:hover {
+    text-decoration: none;
+    color:  #204652;
+    transition: 0.35s ease-out;
+  }
 `;

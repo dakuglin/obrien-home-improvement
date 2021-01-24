@@ -24,7 +24,7 @@ export const Footer: FC = () => {
         <Container fluid>
           <Row lg={12} className="row"> 
             <Col className="col-lg-12 logo">
-              <a href="/obrien-home-improvement"> 
+              <a href="/"> 
                 <Img
                   src={LOGO}
                   alt="O'Brien Home Improvement"
@@ -35,8 +35,8 @@ export const Footer: FC = () => {
           <Row lg={12} className="row">
             <Col md={12}>
               <Row className="row">
-                <div className="accordion d-lg-flex w-100" id="accordion">
-                  <Col className="col-lg-4 col-md-12"> {/* column 1 */}
+                <Container className="accordion d-lg-flex w-100" id="accordion">
+                  <Col className="col-lg-4"> {/* column 1 */}
                     <a 
                       href="#contact" 
                       className="h4 nav-link p-0 d-block d-lg-none d-xl-none" 
@@ -47,7 +47,7 @@ export const Footer: FC = () => {
                     <FooterTitle className="h4 d-none d-lg-block d-xl-block">
                       Contact
                     </FooterTitle>
-                    <div 
+                    <Container 
                       className="collapse d-lg-flex" 
                       id="contact" 
                       data-parent="#accordion"
@@ -65,9 +65,9 @@ export const Footer: FC = () => {
                           </a>
                         </p>
                       </FooterContent>
-                    </div>
+                    </Container>
                   </Col>
-                  <Col className="col-lg-4 col-md-12"> {/* column 2 */}
+                  <Col className="col-lg-4"> {/* column 2 */}
                     <a 
                       href="#about" 
                       className="h4 nav-link p-0 d-block d-lg-none d-xl-none" 
@@ -78,7 +78,7 @@ export const Footer: FC = () => {
                     <FooterTitle className="h4 d-none d-lg-block d-xl-block">
                       About
                     </FooterTitle>
-                    <div 
+                    <Container 
                       className="collapse d-lg-flex" 
                       id="about" 
                       data-parent="#accordion">
@@ -87,9 +87,9 @@ export const Footer: FC = () => {
                           <p>Upfront Pricing</p>
                           <p>Licensed & Insured</p>
                         </FooterContent>
-                    </div>
+                    </Container>
                   </Col>
-                  <Col className="col-lg-4 col-md-12"> {/* column 3 */}
+                  <Col className="col-lg-4"> {/* column 3 */}
                     <a 
                       href="#connect" 
                       className="h4 nav-link p-0 d-block d-lg-none d-xl-none" 
@@ -100,7 +100,7 @@ export const Footer: FC = () => {
                     <FooterTitle className="h4 d-none d-lg-block d-xl-block">
                       Connect
                     </FooterTitle>
-                    <div 
+                    <Container 
                       className="collapse d-lg-flex" 
                       id="connect" 
                       data-parent="#accordion"
@@ -113,9 +113,9 @@ export const Footer: FC = () => {
                           <SiInstagram className="social-media-icon"/>
                         </a>
                       </FooterContent>
-                    </div>
+                    </Container>
                   </Col>
-                </div>
+                </Container>
               </Row>
             </Col>
           </Row>
