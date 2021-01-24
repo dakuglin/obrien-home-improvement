@@ -15,13 +15,18 @@ export const FooterWrapper = styled.div`
   display: flex;
   max-width: 100%;
   margin: 0 auto;
+
+  .footer-columns {
+    @media (max-width: 768px) {
+      padding-top: 32px;
+    }
+  }
 `; 
 
 export const Img = styled.img`
   //style logo
   width: 220px;
   height: 70px;
-  margin-left: 26%;
 `;
 
 export const FooterTitle = styled.div`
@@ -32,6 +37,7 @@ export const FooterTitle = styled.div`
   padding-bottom: 20px;
   color:  #39b54a;
   font-weight: 1000;
+  margin-left: 33%;
 `;
 
 export const FooterContent = styled.div`
