@@ -15,37 +15,39 @@ export const FooterWrapper = styled.div`
   display: flex;
   max-width: 100%;
   margin: 0 auto;
-
-  .footer-columns {
-    @media (max-width: 768px) {
-      padding-top: 32px;
-    }
-  }
 `; 
 
 export const Img = styled.img`
   //style logo
   width: 220px;
   height: 70px;
-`;
+  margin-left: 60px;
 
-export const FooterTitle = styled.div`
-  //styles all second row footer titles
-  font-family: 'Roboto', sans-serif; 
-  font-size: 27px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color:  #39b54a;
-  font-weight: 1000;
-  margin-left: 33%;
+  @media (max-width: 768px) {
+    width: 140px;
+    height: 55px;
+  }
 `;
 
 export const FooterContent = styled.div`
   font-family: 'Nunito', sans-serif;
-  margin-left: 33%;
   font-size: 20px;
   font-weight: 500;
+  display: block;
+  margin: 0 auto;
+  margin-left: 33%;
 
+  a.footer-contact {
+    font-style: oblique;
+    color: #204652;
+  }
+
+  a:hover {
+    color:  #39b54a;
+    transition: 0.35s ease-out;
+    text-decoration: none;
+  }
+  
   svg.social-media-icon {
     font-size: 40px;
     margin: 5px;
@@ -56,24 +58,38 @@ export const FooterContent = styled.div`
     color:  #39b54a;
     transition: 0.35s ease-out;
   }
+
+  @media (max-width: 768px) {
+    margin-left: 5%;
+  }
+`;
+
+export const FooterTitle = styled.div`
+  //styles all second row footer titles
+  font-family: 'Roboto', sans-serif; 
+  font-size: 27px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color:  #39b54a;
+  font-weight: 1000;
+  margin-left: 33%;  
 `;
 
 export const FooterCredit = styled.div`
   color: #204652;
   text-align: center;
-  font-style: oblique;
   border-top: 3px dashed;
-  padding-top: 15px;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
+  padding-top: 16px;
 
   span.credit-link {
     color: #c38d9e;
-    font-style: italic;
+    font-style: oblique;
     text-decoration: none;
   }
 
-  span.credit-link:hover {
+  a:hover {
     text-decoration: none;
   }
 `;

@@ -1,10 +1,6 @@
 import React, { FC } from "react";
 import LOGO from "../images/logo.png";
-import { 
-  Container, 
-  Row, 
-  Col,
-} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { 
   FooterContainer,
   FooterWrapper,
@@ -25,9 +21,9 @@ export const Footer: FC = () => {
     <>
     <FooterContainer>
       <FooterWrapper>
-        <Container fluid className="container">
+        <Container fluid>
           <Row lg={12} className="row"> 
-            <Col className="col-lg-12">
+            <Col className="col-lg-12 logo">
               <a href="/obrien-home-improvement"> 
                 <Img
                   src={LOGO}
@@ -36,8 +32,8 @@ export const Footer: FC = () => {
               </a>
             </Col>
           </Row>
-          <Row className="row">
-            <Col className="col-md-12">
+          <Row lg={12} className="row">
+            <Col md={12}>
               <Row className="row">
                 <div className="accordion d-lg-flex w-100" id="accordion">
                   <Col className="col-lg-4 col-md-12"> {/* column 1 */}
@@ -58,8 +54,16 @@ export const Footer: FC = () => {
                     >
                       <FooterContent>
                         <p>Alex O'Brien Stobbelaar - Owner</p>
-                        <p>homeimprovements.obrien@gmail.com</p>
-                        <p>303-305-8433</p>
+                        <p>
+                          <a href="mailto:homeimprovements.obrien@gmail.com" className="footer-contact">
+                          homeimprovements.obrien@gmail.com
+                          </a>
+                        </p>
+                        <p>
+                          <a href="tel:3033058433" className="footer-contact">
+                          303-305-8433
+                          </a>
+                        </p>
                       </FooterContent>
                     </div>
                   </Col>
@@ -117,64 +121,18 @@ export const Footer: FC = () => {
           </Row>
         </Container>
       </FooterWrapper>
+      <FooterCredit>
+        <Container fluid>
+          <Row>
+            <Col sm={12}>
+              <p> 
+                website designed by <a href="https://dana-weijers-portfolio.herokuapp.com/" target="_#"><span className="credit-link">dana weijers</span></a> 
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </FooterCredit>
     </FooterContainer>
     </>
   );
 };
-
-
-// <FooterContainer className="footer-container">
-//       <FooterWrapper>
-//         <Container fluid>
-//           <Row lg={12} className="row"> {/* first row logo */}
-//             <Col className="col-lg-12">
-//               <a href="/obrien-home-improvement"> 
-//                 <Img
-//                   src={LOGO}
-//                   alt="O'Brien Home Improvement"
-//                 />
-//               </a>
-//             </Col>
-//           </Row>
-//           <Row className="row"> {/* second row footer FooterTitles w/ FooterContent*/}
-//             <Col lg={4} className="col-lg-4">
-//             <FooterContent>
-//               <FooterTitle>Contact</FooterTitle>
-//               <p>Alex O'Brien Stobbelaar - Owner</p>
-//               <p>homeimprovements.obrien@gmail.com</p>
-//               <p>303-305-8433</p>
-//               </FooterContent>
-//             </Col>
-//             <Col lg={4} className="col-lg-4">
-//             <FooterContent>
-//               <FooterTitle>About</FooterTitle>
-//               <p>Free Estimates</p>
-//               <p>Upfront Pricing</p>
-//               <p>Licensed & Insured</p>
-//               </FooterContent>
-//             </Col>
-//             <Col lg={4} className="col-lg-4">
-//             <FooterContent>
-//               <FooterTitle>Connect</FooterTitle>
-//                 <a href="/#" target="_#" >
-//                   <SiFacebook className="social-media-icon"/>
-//                 </a>
-//                 <a href="https://www.instagram.com/obrienhomeimprovement/?hl=en" target="_#">
-//                   <SiInstagram className="social-media-icon"/>
-//                 </a>
-//               </FooterContent>
-//             </Col>
-//           </Row>
-//         </Container>
-//       </FooterWrapper>
-//       <FooterCredit>
-//         <Row>
-//           <Col sm={12}>
-//             <p> 
-//               website designed by <a href="https://dana-weijers-portfolio.herokuapp.com/" target="_#"><span className="credit-link">dana weijers</span></a> 
-//             </p>
-//           </Col>
-//         </Row>
-//       </FooterCredit>
-//     </FooterContainer>
-
