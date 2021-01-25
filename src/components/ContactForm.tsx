@@ -56,7 +56,7 @@ export const ContactForm: FC<{}> = () => {
           <Formik
             initialValues={initialValues}
             onSubmit={(values, actions) => {
-              console.log({ values, actions });
+            console.log({ values, actions });
               axios({
                 method: "POST",
                 url: FORM_URL,
