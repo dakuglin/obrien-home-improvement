@@ -35,8 +35,8 @@ export const Footer: FC = () => {
           <Row lg={12} className="row">
             <Col md={12}>
               <Row className="row">
-                <Container className="accordion d-lg-flex w-100" id="accordion">
-                  <Col className="col-lg-4"> {/* column 1 */}
+                <Container fluid className="accordion d-lg-flex w-100" id="accordion">
+                  <Col lg={4}> {/* column 1 */}
                     <a 
                       href="#contact" 
                       className="h4 nav-link p-0 d-block d-lg-none d-xl-none" 
@@ -67,7 +67,7 @@ export const Footer: FC = () => {
                       </FooterContent>
                     </Container>
                   </Col>
-                  <Col className="col-lg-4"> {/* column 2 */}
+                  <Col lg={4}> {/* column 2 */}
                     <a 
                       href="#about" 
                       className="h4 nav-link p-0 d-block d-lg-none d-xl-none" 
@@ -89,7 +89,7 @@ export const Footer: FC = () => {
                         </FooterContent>
                     </Container>
                   </Col>
-                  <Col className="col-lg-4"> {/* column 3 */}
+                  <Col lg={4}> {/* column 3 */}
                     <a 
                       href="#connect" 
                       className="h4 nav-link p-0 d-block d-lg-none d-xl-none" 
