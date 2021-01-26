@@ -21,7 +21,7 @@ export const Img = styled.img`
   //style logo
   width: 220px;
   height: 70px;
-  margin-left: 60px;
+  margin-left: 64px;
 
   @media (max-width: 768px) {
     width: 140px;
@@ -33,9 +33,10 @@ export const FooterContent = styled.div`
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
   font-weight: 500;
-  display: block;
-  margin: 0 auto;
   margin-left: 33%;
+  /* overflow: hidden;
+  text-overflow: "----";  */
+  overflow: visible;
 
   a.footer-contact {
     font-style: oblique;

@@ -9,7 +9,8 @@ export const ServicesSection: FC = () => {
   return (
     <>
     <ServicesContainer>
-      <ServicesTitle>What We Offer </ServicesTitle>
+      {/* <ServicesTitle>What We Offer</ServicesTitle> */}
+      <ServicesTitle>Welcome Home</ServicesTitle>
       <Services>
         <FaHammer className="form-title-hammer"/>
         {services.map((value: string, index: number) => {
