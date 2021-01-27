@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { HeroContainer } from "../styles/Hero";
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 
 
 export const HeroTest: FC = () => {

@@ -1,13 +1,58 @@
 import React, { FC } from "react";
-import { Card, Container, Row, Col } from "react-bootstrap";
+import { Card, Container, Row, Col, Carousel } from "react-bootstrap";
 import { ProjectSectionContainer, Title } from "../styles/ProjectSection";
-
+import projects from "../projects.json";
 
 export const ProjectSection: FC = () => {
+
+  console.log(projects)
+
   return (
     <>
     <Title>Projects</Title>
+
     <ProjectSectionContainer>
+      <Container>
+        <Row>
+          <Col>
+            <Carousel interval={null}>
+            {projects.map(project => (
+              <Carousel.Item>
+                <Card>
+                  <Card.Img 
+                    className="d-block w-100"
+                    src={project.img_url} 
+                    alt={project.img_alt}
+                  />
+                </Card>
+              </Carousel.Item>
+            ))}
+           </Carousel> 
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Carousel interval={null}>
+            {projects.map(project => (
+              <Carousel.Item>
+                <Card>
+                  <Card.Img 
+                    className="d-block w-100"
+                    src={project.img_url} 
+                    alt={project.img_alt}
+                  />
+                </Card>
+              </Carousel.Item>
+            ))}
+           </Carousel> 
+          </Col>
+        </Row>
+      </Container>
+    </ProjectSectionContainer>
+
+
+
+    {/* <ProjectSectionContainer>
     <Container fluid>
       <Row className="row">
         <Col xl={6}>
@@ -62,7 +107,7 @@ export const ProjectSection: FC = () => {
         </Col>
       </Row>
     </Container>
-    </ProjectSectionContainer>
+    </ProjectSectionContainer> */}
     </>
   );
 };
