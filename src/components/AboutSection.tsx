@@ -1,18 +1,16 @@
 import React, { FC } from "react";
 import { 
-  AboutContainer,
   AboutTitle, 
   AboutMain, 
   AboutMainContact, 
-} from "../styles/AboutSection";
+} from "../styles/AboutSection"; //styled components 
 
 
 export const AboutSection: FC = () => {
 
   return (
     <>
-    <AboutContainer>
-      <AboutTitle>Welcome Home</AboutTitle>
+      <AboutTitle>Welcome Home</AboutTitle> 
       <AboutMain> 
         Let O'Brien Home Improvement help you with your next home renovation. This Colorado based company has been serving the greater Denver Area for over 5 years. 
       </AboutMain>
@@ -33,7 +31,6 @@ export const AboutSection: FC = () => {
           </p>
         </div>      
       </AboutMainContact>
-    </AboutContainer>
     </>
   );
 };
