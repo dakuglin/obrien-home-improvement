@@ -1,22 +1,23 @@
 import React, { FC } from "react";
 import { Card, Container, Row, Col, Carousel } from "react-bootstrap";
-import { ProjectSectionContainer, Title } from "../styles/ProjectSection";
-import projects from "../projects.json";
+import { 
+  ProjectSectionContainer, 
+  Title, 
+} from "../styles/ProjectSection"; //styled components 
+import projects from "../projects.json"; //json file with project pictures and descriptions to map over
 
 export const ProjectSection: FC = () => {
-
-  console.log(projects)
 
   return (
     <>
     <Title>Projects</Title>
-
     <ProjectSectionContainer>
       <Container>
         <Row>
           <Col>
             <Carousel interval={null}>
-            {projects.map(project => (
+               {/* mapping over project 1 photos*/}
+            {projects.map(project => (  
               <Carousel.Item>
                 <Card>
                   <Card.Img 
@@ -24,6 +25,12 @@ export const ProjectSection: FC = () => {
                     src={project.img_url} 
                     alt={project.img_alt}
                   />
+                  <Card.Body>
+                    <Card.Title>Project 1 Picures</Card.Title>
+                    <Card.Text>
+                      Exapmle text here
+                    </Card.Text>
+                </Card.Body>
                 </Card>
               </Carousel.Item>
             ))}
@@ -33,6 +40,7 @@ export const ProjectSection: FC = () => {
         <Row>
           <Col>
             <Carousel interval={null}>
+               {/* mapping over project 1 photos*/}
             {projects.map(project => (
               <Carousel.Item>
                 <Card>
@@ -42,6 +50,12 @@ export const ProjectSection: FC = () => {
                     alt={project.img_alt}
                   />
                 </Card>
+                <Card.Body>
+                    <Card.Title>Project 2 Pictures</Card.Title>
+                    <Card.Text>
+                      Exapmle text here
+                    </Card.Text>
+                </Card.Body>
               </Carousel.Item>
             ))}
            </Carousel> 
@@ -49,8 +63,6 @@ export const ProjectSection: FC = () => {
         </Row>
       </Container>
     </ProjectSectionContainer>
-
-
 
     {/* <ProjectSectionContainer>
     <Container fluid>

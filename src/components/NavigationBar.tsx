@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import { Container } from "../styles/Navigation";
-import LOGO from "../images/logo.png";
+import { Container } from "../styles/Navigation"; //styled components
+import LOGO from "../images/logo.png"; //company logo image
 
 export const NavigationBar: FC = () => {
   return (

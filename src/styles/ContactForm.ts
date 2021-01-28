@@ -11,21 +11,21 @@ export const FormWrapper = styled.div`
   max-width: 65%;
   margin: 0 auto;
 
-  .form-group {
-  
-  }
-
   input.form-control {
     height: 40px;
+    font-style: italic;
   }
 
   input.form-control.message {
     height: 100px;
     vertical-align: text-top;
+    padding-bottom: 65px;
   }
 
-  ::placeholder {
-    color: pink;
+  .status {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
   }
 `;
 
@@ -40,7 +40,7 @@ export const Title = styled.h1`
     display: inline;
     font-size: 20px;
     margin: 12px;
-    font-style: italic;
+    font-style: oblique;
     color: #39b54a;
   }
   .form-title-hammer {
@@ -65,6 +65,11 @@ export const Button = styled.button`
   white-space: none;
   display: block;
   margin: 0 auto;
+
+  :hover {
+    background-color: #39b54a;
+    transition: 0.35s ease-out;
+  }
 `;
 
 

@@ -8,11 +8,11 @@ import {
   FooterTitle,
   FooterContent,
   FooterCredit,
-} from "../styles/Footer";
+} from "../styles/Footer"; //styled components 
 import { 
   SiInstagram,
   SiFacebook,
-} from "react-icons/si"
+} from "react-icons/si"; //react-icons
 
 
 export const Footer: FC = () => {
@@ -21,9 +21,9 @@ export const Footer: FC = () => {
     <>
     <FooterContainer>
       <FooterWrapper>
-        <Container fluid>
-          <Row lg={12} className="row"> 
-            <Col className="col-lg-12 logo">
+        <Container fluid> 
+          <Row lg={12} className="row"> {/* top row containing company logo */}
+            <Col className="col-lg-12 logo">  
               <a href="/"> 
                 <Img
                   src={LOGO}
@@ -81,12 +81,13 @@ export const Footer: FC = () => {
                     <Container 
                       className="collapse d-lg-flex" 
                       id="about" 
-                      data-parent="#accordion">
-                        <FooterContent>
-                          <p>Free Estimates</p>
-                          <p>Upfront Pricing</p>
-                          <p>Licensed & Insured</p>
-                        </FooterContent>
+                      data-parent="#accordion"
+                    >
+                      <FooterContent>
+                        <p>Free Estimates</p>
+                        <p>Upfront Pricing</p>
+                        <p>Licensed & Insured</p>
+                      </FooterContent>
                     </Container>
                   </Col>
                   <Col lg={4}> {/* column 3 */}
@@ -104,7 +105,7 @@ export const Footer: FC = () => {
                       className="collapse d-lg-flex" 
                       id="connect" 
                       data-parent="#accordion"
-                      >
+                    >
                       <FooterContent>
                         <a href="/#" target="_#" >
                           <SiFacebook className="social-media-icon"/>

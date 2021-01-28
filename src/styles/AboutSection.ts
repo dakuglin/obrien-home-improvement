@@ -1,18 +1,13 @@
 import styled from "styled-components";
 
-export const AboutContainer = styled.div`
-  /* margin: 50px;
-  border: solid black; */
-`;
-
 export const AboutTitle = styled.div`
-  /* padding-top: 2%;
-  padding-bottom: 2%; */
+  padding-top: 2%;
+  padding-bottom: 2%;
   text-align: center;
   font-size: 3em;
   font-weight: 500;
   font-style: oblique;
-  /* border-bottom: 3px dashed; */
+  border-bottom: 3px dashed;
 `;
 
 export const AboutMain = styled.div`
